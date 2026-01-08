@@ -1,0 +1,44 @@
+[2026-01-08T13:28:51.885Z] | [ERROR] |  500 userSchema.validate is not a function
+[2026-01-08T13:29:52.500Z] | [ERROR] |  500 Invalid username or password
+[2026-01-08T13:30:42.380Z] | [ERROR] |  500 Cannot read properties of null (reading 'file')
+[2026-01-08T13:31:52.254Z] | [ERROR] |  500 Cannot read properties of null (reading 'file')
+[2026-01-08T13:32:42.813Z] | [ERROR] |  500 Cannot read properties of null (reading 'file') | TypeError: Cannot read properties of null (reading 'file')
+    at registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:7:65)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/38_dars/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\38_dars\node_modules\router\index.js:295:15
+[2026-01-08T13:38:06.009Z] | [ERROR] |  500 Invalid username or password | Error: Invalid username or password
+    at UserService.login (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:37:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async login (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:20:18)
+[2026-01-08T13:38:39.560Z] | [ERROR] |  500 duplicate key value violates unique constraint "users_full_name_key" | error: duplicate key value violates unique constraint "users_full_name_key"
+    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:21:23)
+    at async registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:7:18)
+[2026-01-08T13:45:18.027Z] | [ERROR] |  500 duplicate key value violates unique constraint "users_full_name_key" | error: duplicate key value violates unique constraint "users_full_name_key"
+    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:21:23)
+    at async registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:7:18)
+[2026-01-08T13:45:18.997Z] | [ERROR] |  500 duplicate key value violates unique constraint "users_full_name_key" | error: duplicate key value violates unique constraint "users_full_name_key"
+    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:21:23)
+    at async registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:7:18)
+[2026-01-08T13:45:19.733Z] | [ERROR] |  500 duplicate key value violates unique constraint "users_full_name_key" | error: duplicate key value violates unique constraint "users_full_name_key"
+    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:21:23)
+    at async registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:7:18)
+[2026-01-08T13:45:20.419Z] | [ERROR] |  500 duplicate key value violates unique constraint "users_full_name_key" | error: duplicate key value violates unique constraint "users_full_name_key"
+    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:21:23)
+    at async registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:7:18)
