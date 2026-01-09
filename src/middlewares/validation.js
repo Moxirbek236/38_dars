@@ -17,6 +17,14 @@ class Validations {
     }
     next();
   }
+
+  validateVideo(req, res, next) {
+    const { error } = userSchema.videoSchema.validate(req.body);
+    if (error) {
+      return next(new BadRequestError(error.details[0].message));
+    }
+    next();
+  }
 }
 
 export default new Validations();
