@@ -33,3 +33,39 @@ export class ForbiddenError extends Error {
         this.status = status;
     }
 }
+
+export class ConflictError extends Error {
+    constructor(message = "Conflict", status = 409) {
+        super();
+        this.message = message;
+        this.name = "ConflictError";
+        this.status = status;
+    }
+}
+
+export class UnauthorizedError extends Error {
+    constructor(message = "Unauthorized", status = 401) {
+        super();
+        this.message = message;
+        this.name = "UnauthorizedError";
+        this.status = status;
+    }
+}
+
+export class TokenExpried extends Error {
+    constructor(message = "Token Expired", status = 401) {
+        super();
+        this.message = message;
+        this.name = "TokenExpried";
+        this.status = status;
+    }
+}
+
+export class JsonWebTokenError extends Error {
+    constructor(message = "Json Web Token Error", status = 401) {
+        super();
+        this.message = message;
+        this.name = "JsonWebTokenError";
+        this.status = status;
+    }
+}

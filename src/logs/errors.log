@@ -423,3 +423,70 @@
     at Route.dispatch (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:117:3)
     at handle (D:\NT DARSLARI\39_dars\node_modules\router\index.js:435:11)
     at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+[2026-01-10T12:08:08.486Z] | [ERROR] |  500 secretOrPrivateKey must have a value | Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (D:\NT DARSLARI\39_dars\node_modules\jsonwebtoken\sign.js:111:20)
+    at JWTService.generateToken (file:///D:/NT%20DARSLARI/39_dars/src/utils/jwt.js:5:16)
+    at UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:32:28)
+    at async registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:10:20)
+[2026-01-10T12:12:23.219Z] | [ERROR] |  500 secretOrPrivateKey must have a value | Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (D:\NT DARSLARI\39_dars\node_modules\jsonwebtoken\sign.js:111:20)
+    at JWTService.generateToken (file:///D:/NT%20DARSLARI/39_dars/src/utils/jwt.js:5:16)
+    at UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:35:28)
+    at async registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:9:20)
+[2026-01-10T12:13:37.489Z] | [ERROR] |  500 secretOrPrivateKey must have a value | Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (D:\NT DARSLARI\39_dars\node_modules\jsonwebtoken\sign.js:111:20)
+    at JWTService.generateToken (file:///D:/NT%20DARSLARI/39_dars/src/utils/jwt.js:6:16)
+    at UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:35:28)
+    at async registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:9:20)
+[2026-01-10T12:15:34.196Z] | [ERROR] |  500 duplicate key value violates unique constraint "users_full_name_key" | error: duplicate key value violates unique constraint "users_full_name_key"
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:38:21)
+    at async registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:9:20)
+[2026-01-10T12:16:17.752Z] | [ERROR] |  500 duplicate key value violates unique constraint "users_full_name_key" | error: duplicate key value violates unique constraint "users_full_name_key"
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:38:21)
+    at async registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:9:20)
+[2026-01-10T12:55:56.385Z] - [ERROR] - [500] videoService.getVideoById is not a function
+	TypeError: videoService.getVideoById is not a function
+    at getVideoById (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:44:45)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/checkToken.js:17:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\39_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\39_dars\node_modules\router\index.js:295:15
+[2026-01-10T13:18:31.901Z] - [ERROR] - [500] column v.description does not exist
+	error: column v.description does not exist
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/NT%20DARSLARI/39_dars/src/routes/search.route.js:9:18
+[2026-01-10T13:22:25.121Z] - [ERROR] - [500] column u.username does not exist
+	error: column u.username does not exist
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/NT%20DARSLARI/39_dars/src/routes/search.route.js:9:16
+[2026-01-10T13:28:44.479Z] - [ERROR] - [500] column v.description does not exist
+	error: column v.description does not exist
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/NT%20DARSLARI/39_dars/src/routes/search.route.js:9:16
+[2026-01-10T13:29:14.880Z] - [ERROR] - [500] column u.email does not exist
+	error: column u.email does not exist
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/NT%20DARSLARI/39_dars/src/routes/search.route.js:9:16
+[2026-01-10T13:29:26.142Z] - [ERROR] - [500] syntax error at or near "FROM"
+	error: syntax error at or near "FROM"
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/NT%20DARSLARI/39_dars/src/routes/search.route.js:9:16
+[2026-01-10T13:29:43.231Z] - [ERROR] - [500] bind message supplies 2 parameters, but prepared statement "" requires 1
+	error: bind message supplies 2 parameters, but prepared statement "" requires 1
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/NT%20DARSLARI/39_dars/src/routes/search.route.js:9:16

@@ -1,11 +1,13 @@
 import JWT from "jsonwebtoken";
 
 class JWTService {
+
   generateToken(payload) {
-    return JWT.sign(payload, process.env.JWT_SECRET, { expiresIn: "1h" });
+    return JWT.sign(payload, process.env.SECRET_KEY, { expiresIn: "5m" });
   }
-    verifyToken(token) {
-    return JWT.verify(token, process.env.JWT_SECRET);
+
+  verifyToken(token) {
+    return JWT.verify(token, process.env.SECRET_KEY);
   }
 }
 

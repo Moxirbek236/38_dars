@@ -4,8 +4,6 @@ class UserController {
   constructor() {}
 
   async registry(req, res, next) {
-    console.log('salo');
-    
     try {
       const data = await userService.registry(req.body, req.files.file);
       res.status(data.status).json(data);
@@ -23,11 +21,24 @@ class UserController {
     }
   }
 
-  async getAllUsers(req, res, next) {   
+  async getAllUsers(req, res, next) {
     try {
       const data = await userService.getAllUsers();
       console.log(data);
-      
+
+      res.status(data.status).json(data);
+    } catch (err) {
+      next(err);
+    }
+  }
+
+  async updateUser(req, res, next) {
+    try {
+      const data = await userService.updateUser(
+        req.params.id,
+        req.body,
+        req.files?.file
+      );
       res.status(data.status).json(data);
     } catch (err) {
       next(err);

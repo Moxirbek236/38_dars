@@ -37,5 +37,16 @@ class VideoController {
             next(err);
         }
     }
+
+    async getVideoById(req, res, next) {
+        try {
+            const user_id = req.user.id;
+            const data = await videoService.getVideoById(user_id);
+            res.status(data.status).json(data);
+        } catch (err) {
+            next(err);
+        }        
+    }
+
 }
 export default new VideoController();
